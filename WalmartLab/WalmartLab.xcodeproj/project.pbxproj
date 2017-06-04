@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34032B7F1EB5E32E00941977 /* SearchResultItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34032B7E1EB5E32E00941977 /* SearchResultItemCell.swift */; };
+		34032B811EB5E65500941977 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34032B801EB5E65500941977 /* ImageCache.swift */; };
+		34032B831EB5EFDC00941977 /* CellSizeCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34032B821EB5EFDC00941977 /* CellSizeCache.swift */; };
+		34032B851EB5F7CE00941977 /* ResponsePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34032B841EB5F7CE00941977 /* ResponsePage.swift */; };
+		34032B871EB5F82900941977 /* OpenAPIPaginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34032B861EB5F82900941977 /* OpenAPIPaginator.swift */; };
+		34032B901EB6BA7800941977 /* String+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34032B8F1EB6BA7800941977 /* String+HTML.swift */; };
+		34032B921EB6DE8E00941977 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34032B911EB6DE8E00941977 /* ReviewViewController.swift */; };
+		34032B941EB6DEB300941977 /* ReviewEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34032B931EB6DEB300941977 /* ReviewEndPoint.swift */; };
+		34032B961EB6DEDF00941977 /* ResponseReviewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34032B951EB6DEDF00941977 /* ResponseReviewPage.swift */; };
+		34032B981EB6E4AE00941977 /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34032B971EB6E4AE00941977 /* ReviewTableViewController.swift */; };
+		34032B9A1EB6E9D100941977 /* ReviewItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34032B991EB6E9D100941977 /* ReviewItemCell.swift */; };
+		3414D2541EB591AA001CF41D /* ResponseGiftOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414D2531EB591AA001CF41D /* ResponseGiftOptions.swift */; };
+		3414D2561EB59371001CF41D /* ResponseImageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414D2551EB59371001CF41D /* ResponseImageEntity.swift */; };
+		3414D2591EB59614001CF41D /* WalmartLabService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414D2581EB59614001CF41D /* WalmartLabService.swift */; };
+		3414D25F1EB596E2001CF41D /* SearchResultEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414D25E1EB596E2001CF41D /* SearchResultEndPoint.swift */; };
+		3414D2611EB59922001CF41D /* APIInvocationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414D2601EB59922001CF41D /* APIInvocationQueue.swift */; };
+		3414D2641EB5A285001CF41D /* APIResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414D2631EB5A285001CF41D /* APIResultViewController.swift */; };
+		3414D2691EB5A608001CF41D /* APIRetryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414D2671EB5A608001CF41D /* APIRetryViewController.swift */; };
+		34362E191EB5C10800086C1A /* SearchTextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34362E181EB5C10800086C1A /* SearchTextFieldController.swift */; };
+		34362E1B1EB5C15100086C1A /* SearchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34362E1A1EB5C15100086C1A /* SearchResultController.swift */; };
+		348107C81EB11E6F000C55BB /* WalmartLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348107C71EB11E6F000C55BB /* WalmartLabTests.swift */; };
+		348107D31EB11E6F000C55BB /* WalmartLabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348107D21EB11E6F000C55BB /* WalmartLabUITests.swift */; };
+		3484F4F71EB456A300E59389 /* ResponseSearchResultPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3484F4F61EB456A300E59389 /* ResponseSearchResultPage.swift */; };
+		3484F4F91EB457C500E59389 /* ResponseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3484F4F81EB457C500E59389 /* ResponseItem.swift */; };
+		349A4D451EE313A900AC18C8 /* WalmartLabTestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349A4D441EE313A900AC18C8 /* WalmartLabTestService.swift */; };
+		349A4D4E1EE368BC00AC18C8 /* ResponseProductPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349A4D4D1EE368BC00AC18C8 /* ResponseProductPage.swift */; };
+		349A4D501EE369EB00AC18C8 /* ResponseProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349A4D4F1EE369EB00AC18C8 /* ResponseProduct.swift */; };
+		349A4D531EE36C3700AC18C8 /* TestAPIMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349A4D511EE36C3700AC18C8 /* TestAPIMain.storyboard */; };
+		349A4D5A1EE36E2200AC18C8 /* ProductsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349A4D591EE36E2200AC18C8 /* ProductsEndpoint.swift */; };
+		349A4D5C1EE370A300AC18C8 /* ProductListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349A4D5B1EE370A300AC18C8 /* ProductListController.swift */; };
+		349A4D5E1EE373BC00AC18C8 /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349A4D5D1EE373BC00AC18C8 /* ProductTableViewController.swift */; };
+		349A4D621EE37A1D00AC18C8 /* TestAPIPaginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349A4D611EE37A1D00AC18C8 /* TestAPIPaginator.swift */; };
+		349A4D641EE37F1A00AC18C8 /* ProductDetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349A4D631EE37F1A00AC18C8 /* ProductDetailPageViewController.swift */; };
+		349A4D661EE37F6100AC18C8 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349A4D651EE37F6100AC18C8 /* ProductDetailViewController.swift */; };
+		349A4D681EE3803000AC18C8 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349A4D671EE3803000AC18C8 /* ProductView.swift */; };
+		349A4D6B1EE4904500AC18C8 /* OpenAPISplitViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349A4D6A1EE4904500AC18C8 /* OpenAPISplitViewDelegate.swift */; };
+		349A4D6D1EE4907900AC18C8 /* TestAPISplitViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349A4D6C1EE4907900AC18C8 /* TestAPISplitViewDelegate.swift */; };
+		349A4D6F1EE491EF00AC18C8 /* ContextAwareSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349A4D6E1EE491EF00AC18C8 /* ContextAwareSplitViewController.swift */; };
+		349A4D711EE495A200AC18C8 /* ProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 349A4D701EE495A200AC18C8 /* ProductDetailViewController.xib */; };
+		349A4D731EE4AFF700AC18C8 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349A4D721EE4AFF700AC18C8 /* ProductDetailView.swift */; };
+		349A4D751EE4B00A00AC18C8 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349A4D741EE4B00A00AC18C8 /* ProductListView.swift */; };
+		34DBA57E1EB268A8005BA553 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DBA5751EB268A8005BA553 /* AppDelegate.swift */; };
+		34DBA57F1EB268A8005BA553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34DBA5761EB268A8005BA553 /* Assets.xcassets */; };
+		34DBA5801EB268A8005BA553 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34DBA5771EB268A8005BA553 /* LaunchScreen.storyboard */; };
+		34DBA5811EB268A8005BA553 /* OpenAPIMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34DBA5791EB268A8005BA553 /* OpenAPIMain.storyboard */; };
+		34DBA5B61EB26B9A005BA553 /* ResponseModelTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DBA5B51EB26B9A005BA553 /* ResponseModelTransformer.swift */; };
+		34DBA5B81EB26BDA005BA553 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DBA5B71EB26BDA005BA553 /* ResponseModel.swift */; };
+		34DBA5BA1EB26C35005BA553 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DBA5B91EB26C35005BA553 /* APIService.swift */; };
+		34DBA5BC1EB26C41005BA553 /* APIServiceCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DBA5BB1EB26C41005BA553 /* APIServiceCenter.swift */; };
+		34DBA5BE1EB270B8005BA553 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DBA5BD1EB270B8005BA553 /* APIEndpoint.swift */; };
+		34DBA5C01EB27255005BA553 /* APIResponseDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DBA5BF1EB27255005BA553 /* APIResponseDeserializer.swift */; };
+		34DBA5C21EB27449005BA553 /* APIJSONResponseDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DBA5C11EB27449005BA553 /* APIJSONResponseDeserializer.swift */; };
+		34DBA5C41EB2768D005BA553 /* APIInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DBA5C31EB2768D005BA553 /* APIInvocation.swift */; };
+		34DBA5C61EB2789E005BA553 /* APIInvocationQueryFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DBA5C51EB2789E005BA553 /* APIInvocationQueryFragment.swift */; };
+		34DBA5C81EB2805F005BA553 /* APIInvocationQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DBA5C71EB2805F005BA553 /* APIInvocationQuery.swift */; };
+		34DBA5CB1EB294DF005BA553 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DBA5CA1EB294DF005BA553 /* SearchViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		348107C41EB11E6F000C55BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 348107A51EB11E6F000C55BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 348107AC1EB11E6F000C55BB;
+			remoteInfo = WalmartLab;
+		};
+		348107CF1EB11E6F000C55BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 348107A51EB11E6F000C55BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 348107AC1EB11E6F000C55BB;
+			remoteInfo = WalmartLab;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		34032B7E1EB5E32E00941977 /* SearchResultItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultItemCell.swift; sourceTree = "<group>"; };
+		34032B801EB5E65500941977 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		34032B821EB5EFDC00941977 /* CellSizeCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellSizeCache.swift; sourceTree = "<group>"; };
+		34032B841EB5F7CE00941977 /* ResponsePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsePage.swift; sourceTree = "<group>"; };
+		34032B861EB5F82900941977 /* OpenAPIPaginator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAPIPaginator.swift; sourceTree = "<group>"; };
+		34032B8F1EB6BA7800941977 /* String+HTML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+HTML.swift"; sourceTree = "<group>"; };
+		34032B911EB6DE8E00941977 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		34032B931EB6DEB300941977 /* ReviewEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewEndPoint.swift; sourceTree = "<group>"; };
+		34032B951EB6DEDF00941977 /* ResponseReviewPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseReviewPage.swift; sourceTree = "<group>"; };
+		34032B971EB6E4AE00941977 /* ReviewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
+		34032B991EB6E9D100941977 /* ReviewItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewItemCell.swift; sourceTree = "<group>"; };
+		3414D2531EB591AA001CF41D /* ResponseGiftOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseGiftOptions.swift; sourceTree = "<group>"; };
+		3414D2551EB59371001CF41D /* ResponseImageEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseImageEntity.swift; sourceTree = "<group>"; };
+		3414D2581EB59614001CF41D /* WalmartLabService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalmartLabService.swift; sourceTree = "<group>"; };
+		3414D25E1EB596E2001CF41D /* SearchResultEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultEndPoint.swift; sourceTree = "<group>"; };
+		3414D2601EB59922001CF41D /* APIInvocationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIInvocationQueue.swift; sourceTree = "<group>"; };
+		3414D2631EB5A285001CF41D /* APIResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResultViewController.swift; sourceTree = "<group>"; };
+		3414D2671EB5A608001CF41D /* APIRetryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRetryViewController.swift; sourceTree = "<group>"; };
+		34362E181EB5C10800086C1A /* SearchTextFieldController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTextFieldController.swift; sourceTree = "<group>"; };
+		34362E1A1EB5C15100086C1A /* SearchResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultController.swift; sourceTree = "<group>"; };
+		348107AD1EB11E6F000C55BB /* WalmartLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalmartLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		348107C31EB11E6F000C55BB /* WalmartLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalmartLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		348107C71EB11E6F000C55BB /* WalmartLabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalmartLabTests.swift; sourceTree = "<group>"; };
+		348107C91EB11E6F000C55BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		348107CE1EB11E6F000C55BB /* WalmartLabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalmartLabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		348107D21EB11E6F000C55BB /* WalmartLabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalmartLabUITests.swift; sourceTree = "<group>"; };
+		348107D41EB11E6F000C55BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3484F4F61EB456A300E59389 /* ResponseSearchResultPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseSearchResultPage.swift; sourceTree = "<group>"; };
+		3484F4F81EB457C500E59389 /* ResponseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseItem.swift; sourceTree = "<group>"; };
+		349A4D441EE313A900AC18C8 /* WalmartLabTestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalmartLabTestService.swift; sourceTree = "<group>"; };
+		349A4D4D1EE368BC00AC18C8 /* ResponseProductPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseProductPage.swift; sourceTree = "<group>"; };
+		349A4D4F1EE369EB00AC18C8 /* ResponseProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseProduct.swift; sourceTree = "<group>"; };
+		349A4D521EE36C3700AC18C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TestAPIMain.storyboard; sourceTree = "<group>"; };
+		349A4D591EE36E2200AC18C8 /* ProductsEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsEndpoint.swift; sourceTree = "<group>"; };
+		349A4D5B1EE370A300AC18C8 /* ProductListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListController.swift; sourceTree = "<group>"; };
+		349A4D5D1EE373BC00AC18C8 /* ProductTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
+		349A4D611EE37A1D00AC18C8 /* TestAPIPaginator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAPIPaginator.swift; sourceTree = "<group>"; };
+		349A4D631EE37F1A00AC18C8 /* ProductDetailPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailPageViewController.swift; sourceTree = "<group>"; };
+		349A4D651EE37F6100AC18C8 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		349A4D671EE3803000AC18C8 /* ProductView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		349A4D6A1EE4904500AC18C8 /* OpenAPISplitViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAPISplitViewDelegate.swift; sourceTree = "<group>"; };
+		349A4D6C1EE4907900AC18C8 /* TestAPISplitViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAPISplitViewDelegate.swift; sourceTree = "<group>"; };
+		349A4D6E1EE491EF00AC18C8 /* ContextAwareSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextAwareSplitViewController.swift; sourceTree = "<group>"; };
+		349A4D701EE495A200AC18C8 /* ProductDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductDetailViewController.xib; sourceTree = "<group>"; };
+		349A4D721EE4AFF700AC18C8 /* ProductDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		349A4D741EE4B00A00AC18C8 /* ProductListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		34DBA5751EB268A8005BA553 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		34DBA5761EB268A8005BA553 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34DBA5781EB268A8005BA553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34DBA57A1EB268A8005BA553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OpenAPIMain.storyboard; sourceTree = "<group>"; };
+		34DBA57C1EB268A8005BA553 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34DBA5B51EB26B9A005BA553 /* ResponseModelTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseModelTransformer.swift; sourceTree = "<group>"; };
+		34DBA5B71EB26BDA005BA553 /* ResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		34DBA5B91EB26C35005BA553 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		34DBA5BB1EB26C41005BA553 /* APIServiceCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceCenter.swift; sourceTree = "<group>"; };
+		34DBA5BD1EB270B8005BA553 /* APIEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		34DBA5BF1EB27255005BA553 /* APIResponseDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponseDeserializer.swift; sourceTree = "<group>"; };
+		34DBA5C11EB27449005BA553 /* APIJSONResponseDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIJSONResponseDeserializer.swift; sourceTree = "<group>"; };
+		34DBA5C31EB2768D005BA553 /* APIInvocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIInvocation.swift; sourceTree = "<group>"; };
+		34DBA5C51EB2789E005BA553 /* APIInvocationQueryFragment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIInvocationQueryFragment.swift; sourceTree = "<group>"; };
+		34DBA5C71EB2805F005BA553 /* APIInvocationQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIInvocationQuery.swift; sourceTree = "<group>"; };
+		34DBA5CA1EB294DF005BA553 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		348107AA1EB11E6F000C55BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		348107C01EB11E6F000C55BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		348107CB1EB11E6F000C55BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3414D25A1EB596B2001CF41D /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				3414D25D1EB596CF001CF41D /* UI */,
+				3414D25C1EB596CB001CF41D /* API */,
+				3414D25B1EB596C6001CF41D /* Data */,
+			);
+			name = Reviews;
+			sourceTree = "<group>";
+		};
+		3414D25B1EB596C6001CF41D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				34032B951EB6DEDF00941977 /* ResponseReviewPage.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		3414D25C1EB596CB001CF41D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				34032B931EB6DEB300941977 /* ReviewEndPoint.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		3414D25D1EB596CF001CF41D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				34032B911EB6DE8E00941977 /* ReviewViewController.swift */,
+				34032B971EB6E4AE00941977 /* ReviewTableViewController.swift */,
+				34032B991EB6E9D100941977 /* ReviewItemCell.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		3414D2621EB5A225001CF41D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3414D2631EB5A285001CF41D /* APIResultViewController.swift */,
+				3414D2671EB5A608001CF41D /* APIRetryViewController.swift */,
+				349A4D6E1EE491EF00AC18C8 /* ContextAwareSplitViewController.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		3414D26B1EB5BE4F001CF41D /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				34DBA5B31EB26B28005BA553 /* Data */,
+				34DBA5B41EB26B39005BA553 /* API */,
+				3414D2621EB5A225001CF41D /* UI */,
+				34032B801EB5E65500941977 /* ImageCache.swift */,
+				34032B821EB5EFDC00941977 /* CellSizeCache.swift */,
+				34032B8F1EB6BA7800941977 /* String+HTML.swift */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		3414D26C1EB5BE95001CF41D /* WalmartLabsTestAPI */ = {
+			isa = PBXGroup;
+			children = (
+				349A4D511EE36C3700AC18C8 /* TestAPIMain.storyboard */,
+				349A4D441EE313A900AC18C8 /* WalmartLabTestService.swift */,
+				349A4D611EE37A1D00AC18C8 /* TestAPIPaginator.swift */,
+				349A4D6C1EE4907900AC18C8 /* TestAPISplitViewDelegate.swift */,
+				349A4D571EE36D2B00AC18C8 /* API */,
+				349A4D4C1EE367B000AC18C8 /* Data */,
+				349A4D541EE36C7C00AC18C8 /* Domains */,
+			);
+			name = WalmartLabsTestAPI;
+			sourceTree = "<group>";
+		};
+		348107A41EB11E6F000C55BB = {
+			isa = PBXGroup;
+			children = (
+				34DBA5741EB268A8005BA553 /* WalmartLab */,
+				348107C61EB11E6F000C55BB /* WalmartLabTests */,
+				348107D11EB11E6F000C55BB /* WalmartLabUITests */,
+				348107AE1EB11E6F000C55BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		348107AE1EB11E6F000C55BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				348107AD1EB11E6F000C55BB /* WalmartLab.app */,
+				348107C31EB11E6F000C55BB /* WalmartLabTests.xctest */,
+				348107CE1EB11E6F000C55BB /* WalmartLabUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		348107C61EB11E6F000C55BB /* WalmartLabTests */ = {
+			isa = PBXGroup;
+			children = (
+				348107C71EB11E6F000C55BB /* WalmartLabTests.swift */,
+				348107C91EB11E6F000C55BB /* Info.plist */,
+			);
+			path = WalmartLabTests;
+			sourceTree = "<group>";
+		};
+		348107D11EB11E6F000C55BB /* WalmartLabUITests */ = {
+			isa = PBXGroup;
+			children = (
+				348107D21EB11E6F000C55BB /* WalmartLabUITests.swift */,
+				348107D41EB11E6F000C55BB /* Info.plist */,
+			);
+			path = WalmartLabUITests;
+			sourceTree = "<group>";
+		};
+		349A4D481EE3643800AC18C8 /* WalmartLabsOpenAPI */ = {
+			isa = PBXGroup;
+			children = (
+				34DBA5791EB268A8005BA553 /* OpenAPIMain.storyboard */,
+				3414D2581EB59614001CF41D /* WalmartLabService.swift */,
+				34032B861EB5F82900941977 /* OpenAPIPaginator.swift */,
+				349A4D6A1EE4904500AC18C8 /* OpenAPISplitViewDelegate.swift */,
+				349A4D491EE3649900AC18C8 /* Data */,
+				34DBA58E1EB269C4005BA553 /* Domains */,
+			);
+			name = WalmartLabsOpenAPI;
+			sourceTree = "<group>";
+		};
+		349A4D491EE3649900AC18C8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3484F4F81EB457C500E59389 /* ResponseItem.swift */,
+				3414D2531EB591AA001CF41D /* ResponseGiftOptions.swift */,
+				3414D2551EB59371001CF41D /* ResponseImageEntity.swift */,
+				34032B841EB5F7CE00941977 /* ResponsePage.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		349A4D4C1EE367B000AC18C8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				349A4D4D1EE368BC00AC18C8 /* ResponseProductPage.swift */,
+				349A4D4F1EE369EB00AC18C8 /* ResponseProduct.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		349A4D541EE36C7C00AC18C8 /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				349A4D691EE3B69000AC18C8 /* Shared */,
+				349A4D551EE36D1A00AC18C8 /* ProductList */,
+				349A4D581EE36D4400AC18C8 /* ProductDetail */,
+			);
+			name = Domains;
+			sourceTree = "<group>";
+		};
+		349A4D551EE36D1A00AC18C8 /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				349A4D5B1EE370A300AC18C8 /* ProductListController.swift */,
+				349A4D5D1EE373BC00AC18C8 /* ProductTableViewController.swift */,
+				349A4D741EE4B00A00AC18C8 /* ProductListView.swift */,
+			);
+			name = ProductList;
+			sourceTree = "<group>";
+		};
+		349A4D571EE36D2B00AC18C8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				349A4D591EE36E2200AC18C8 /* ProductsEndpoint.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		349A4D581EE36D4400AC18C8 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				349A4D701EE495A200AC18C8 /* ProductDetailViewController.xib */,
+				349A4D631EE37F1A00AC18C8 /* ProductDetailPageViewController.swift */,
+				349A4D651EE37F6100AC18C8 /* ProductDetailViewController.swift */,
+				349A4D721EE4AFF700AC18C8 /* ProductDetailView.swift */,
+			);
+			name = ProductDetail;
+			sourceTree = "<group>";
+		};
+		349A4D691EE3B69000AC18C8 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				349A4D671EE3803000AC18C8 /* ProductView.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		34DBA5741EB268A8005BA553 /* WalmartLab */ = {
+			isa = PBXGroup;
+			children = (
+				3414D26B1EB5BE4F001CF41D /* Foundation */,
+				3414D26C1EB5BE95001CF41D /* WalmartLabsTestAPI */,
+				349A4D481EE3643800AC18C8 /* WalmartLabsOpenAPI */,
+				34DBA5851EB268AE005BA553 /* Common */,
+			);
+			path = WalmartLab;
+			sourceTree = "<group>";
+		};
+		34DBA5851EB268AE005BA553 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				34DBA5751EB268A8005BA553 /* AppDelegate.swift */,
+				34DBA5761EB268A8005BA553 /* Assets.xcassets */,
+				34DBA5771EB268A8005BA553 /* LaunchScreen.storyboard */,
+				34DBA57C1EB268A8005BA553 /* Info.plist */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		34DBA58E1EB269C4005BA553 /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				3414D25A1EB596B2001CF41D /* Reviews */,
+				34DBA5C91EB294CE005BA553 /* Search */,
+			);
+			name = Domains;
+			sourceTree = "<group>";
+		};
+		34DBA5B31EB26B28005BA553 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				34DBA5B51EB26B9A005BA553 /* ResponseModelTransformer.swift */,
+				34DBA5B71EB26BDA005BA553 /* ResponseModel.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		34DBA5B41EB26B39005BA553 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				34DBA5BF1EB27255005BA553 /* APIResponseDeserializer.swift */,
+				34DBA5C11EB27449005BA553 /* APIJSONResponseDeserializer.swift */,
+				3414D2601EB59922001CF41D /* APIInvocationQueue.swift */,
+				34DBA5C31EB2768D005BA553 /* APIInvocation.swift */,
+				34DBA5C51EB2789E005BA553 /* APIInvocationQueryFragment.swift */,
+				34DBA5C71EB2805F005BA553 /* APIInvocationQuery.swift */,
+				34DBA5BD1EB270B8005BA553 /* APIEndpoint.swift */,
+				34DBA5B91EB26C35005BA553 /* APIService.swift */,
+				34DBA5BB1EB26C41005BA553 /* APIServiceCenter.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		34DBA5C91EB294CE005BA553 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				34DBA5CC1EB294F9005BA553 /* UI */,
+				34DBA5CD1EB29501005BA553 /* API */,
+				34DBA5CE1EB29508005BA553 /* Data */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		34DBA5CC1EB294F9005BA553 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				34DBA5CA1EB294DF005BA553 /* SearchViewController.swift */,
+				34362E181EB5C10800086C1A /* SearchTextFieldController.swift */,
+				34362E1A1EB5C15100086C1A /* SearchResultController.swift */,
+				34032B7E1EB5E32E00941977 /* SearchResultItemCell.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		34DBA5CD1EB29501005BA553 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3414D25E1EB596E2001CF41D /* SearchResultEndPoint.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		34DBA5CE1EB29508005BA553 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3484F4F61EB456A300E59389 /* ResponseSearchResultPage.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		348107AC1EB11E6F000C55BB /* WalmartLab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 348107D71EB11E6F000C55BB /* Build configuration list for PBXNativeTarget "WalmartLab" */;
+			buildPhases = (
+				348107A91EB11E6F000C55BB /* Sources */,
+				348107AA1EB11E6F000C55BB /* Frameworks */,
+				348107AB1EB11E6F000C55BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WalmartLab;
+			productName = WalmartLab;
+			productReference = 348107AD1EB11E6F000C55BB /* WalmartLab.app */;
+			productType = "com.apple.product-type.application";
+		};
+		348107C21EB11E6F000C55BB /* WalmartLabTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 348107DA1EB11E6F000C55BB /* Build configuration list for PBXNativeTarget "WalmartLabTests" */;
+			buildPhases = (
+				348107BF1EB11E6F000C55BB /* Sources */,
+				348107C01EB11E6F000C55BB /* Frameworks */,
+				348107C11EB11E6F000C55BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				348107C51EB11E6F000C55BB /* PBXTargetDependency */,
+			);
+			name = WalmartLabTests;
+			productName = WalmartLabTests;
+			productReference = 348107C31EB11E6F000C55BB /* WalmartLabTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		348107CD1EB11E6F000C55BB /* WalmartLabUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 348107DD1EB11E6F000C55BB /* Build configuration list for PBXNativeTarget "WalmartLabUITests" */;
+			buildPhases = (
+				348107CA1EB11E6F000C55BB /* Sources */,
+				348107CB1EB11E6F000C55BB /* Frameworks */,
+				348107CC1EB11E6F000C55BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				348107D01EB11E6F000C55BB /* PBXTargetDependency */,
+			);
+			name = WalmartLabUITests;
+			productName = WalmartLabUITests;
+			productReference = 348107CE1EB11E6F000C55BB /* WalmartLabUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		348107A51EB11E6F000C55BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Sangwoo Im";
+				TargetAttributes = {
+					348107AC1EB11E6F000C55BB = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4J6TRHFL83;
+						ProvisioningStyle = Automatic;
+					};
+					348107C21EB11E6F000C55BB = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4J6TRHFL83;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 348107AC1EB11E6F000C55BB;
+					};
+					348107CD1EB11E6F000C55BB = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4J6TRHFL83;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 348107AC1EB11E6F000C55BB;
+					};
+				};
+			};
+			buildConfigurationList = 348107A81EB11E6F000C55BB /* Build configuration list for PBXProject "WalmartLab" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 348107A41EB11E6F000C55BB;
+			productRefGroup = 348107AE1EB11E6F000C55BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				348107AC1EB11E6F000C55BB /* WalmartLab */,
+				348107C21EB11E6F000C55BB /* WalmartLabTests */,
+				348107CD1EB11E6F000C55BB /* WalmartLabUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		348107AB1EB11E6F000C55BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34DBA5811EB268A8005BA553 /* OpenAPIMain.storyboard in Resources */,
+				34DBA57F1EB268A8005BA553 /* Assets.xcassets in Resources */,
+				349A4D531EE36C3700AC18C8 /* TestAPIMain.storyboard in Resources */,
+				349A4D711EE495A200AC18C8 /* ProductDetailViewController.xib in Resources */,
+				34DBA5801EB268A8005BA553 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		348107C11EB11E6F000C55BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		348107CC1EB11E6F000C55BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		348107A91EB11E6F000C55BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3414D2691EB5A608001CF41D /* APIRetryViewController.swift in Sources */,
+				349A4D5C1EE370A300AC18C8 /* ProductListController.swift in Sources */,
+				349A4D751EE4B00A00AC18C8 /* ProductListView.swift in Sources */,
+				349A4D641EE37F1A00AC18C8 /* ProductDetailPageViewController.swift in Sources */,
+				349A4D6D1EE4907900AC18C8 /* TestAPISplitViewDelegate.swift in Sources */,
+				34DBA5C01EB27255005BA553 /* APIResponseDeserializer.swift in Sources */,
+				34DBA57E1EB268A8005BA553 /* AppDelegate.swift in Sources */,
+				34DBA5B61EB26B9A005BA553 /* ResponseModelTransformer.swift in Sources */,
+				3414D2611EB59922001CF41D /* APIInvocationQueue.swift in Sources */,
+				3414D25F1EB596E2001CF41D /* SearchResultEndPoint.swift in Sources */,
+				349A4D5A1EE36E2200AC18C8 /* ProductsEndpoint.swift in Sources */,
+				34032B921EB6DE8E00941977 /* ReviewViewController.swift in Sources */,
+				3414D2561EB59371001CF41D /* ResponseImageEntity.swift in Sources */,
+				34362E1B1EB5C15100086C1A /* SearchResultController.swift in Sources */,
+				3414D2641EB5A285001CF41D /* APIResultViewController.swift in Sources */,
+				34DBA5C81EB2805F005BA553 /* APIInvocationQuery.swift in Sources */,
+				34032B811EB5E65500941977 /* ImageCache.swift in Sources */,
+				349A4D5E1EE373BC00AC18C8 /* ProductTableViewController.swift in Sources */,
+				349A4D731EE4AFF700AC18C8 /* ProductDetailView.swift in Sources */,
+				34DBA5BA1EB26C35005BA553 /* APIService.swift in Sources */,
+				34DBA5BC1EB26C41005BA553 /* APIServiceCenter.swift in Sources */,
+				349A4D6B1EE4904500AC18C8 /* OpenAPISplitViewDelegate.swift in Sources */,
+				34362E191EB5C10800086C1A /* SearchTextFieldController.swift in Sources */,
+				34032B851EB5F7CE00941977 /* ResponsePage.swift in Sources */,
+				349A4D4E1EE368BC00AC18C8 /* ResponseProductPage.swift in Sources */,
+				349A4D6F1EE491EF00AC18C8 /* ContextAwareSplitViewController.swift in Sources */,
+				34DBA5CB1EB294DF005BA553 /* SearchViewController.swift in Sources */,
+				3484F4F71EB456A300E59389 /* ResponseSearchResultPage.swift in Sources */,
+				34032B7F1EB5E32E00941977 /* SearchResultItemCell.swift in Sources */,
+				34032B961EB6DEDF00941977 /* ResponseReviewPage.swift in Sources */,
+				349A4D681EE3803000AC18C8 /* ProductView.swift in Sources */,
+				34DBA5C41EB2768D005BA553 /* APIInvocation.swift in Sources */,
+				34DBA5C61EB2789E005BA553 /* APIInvocationQueryFragment.swift in Sources */,
+				34DBA5B81EB26BDA005BA553 /* ResponseModel.swift in Sources */,
+				349A4D661EE37F6100AC18C8 /* ProductDetailViewController.swift in Sources */,
+				34DBA5C21EB27449005BA553 /* APIJSONResponseDeserializer.swift in Sources */,
+				3414D2541EB591AA001CF41D /* ResponseGiftOptions.swift in Sources */,
+				34DBA5BE1EB270B8005BA553 /* APIEndpoint.swift in Sources */,
+				34032B831EB5EFDC00941977 /* CellSizeCache.swift in Sources */,
+				3484F4F91EB457C500E59389 /* ResponseItem.swift in Sources */,
+				34032B901EB6BA7800941977 /* String+HTML.swift in Sources */,
+				349A4D621EE37A1D00AC18C8 /* TestAPIPaginator.swift in Sources */,
+				3414D2591EB59614001CF41D /* WalmartLabService.swift in Sources */,
+				34032B9A1EB6E9D100941977 /* ReviewItemCell.swift in Sources */,
+				349A4D451EE313A900AC18C8 /* WalmartLabTestService.swift in Sources */,
+				34032B981EB6E4AE00941977 /* ReviewTableViewController.swift in Sources */,
+				349A4D501EE369EB00AC18C8 /* ResponseProduct.swift in Sources */,
+				34032B941EB6DEB300941977 /* ReviewEndPoint.swift in Sources */,
+				34032B871EB5F82900941977 /* OpenAPIPaginator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		348107BF1EB11E6F000C55BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				348107C81EB11E6F000C55BB /* WalmartLabTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		348107CA1EB11E6F000C55BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				348107D31EB11E6F000C55BB /* WalmartLabUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		348107C51EB11E6F000C55BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 348107AC1EB11E6F000C55BB /* WalmartLab */;
+			targetProxy = 348107C41EB11E6F000C55BB /* PBXContainerItemProxy */;
+		};
+		348107D01EB11E6F000C55BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 348107AC1EB11E6F000C55BB /* WalmartLab */;
+			targetProxy = 348107CF1EB11E6F000C55BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		349A4D511EE36C3700AC18C8 /* TestAPIMain.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				349A4D521EE36C3700AC18C8 /* Base */,
+			);
+			name = TestAPIMain.storyboard;
+			sourceTree = "<group>";
+		};
+		34DBA5771EB268A8005BA553 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34DBA5781EB268A8005BA553 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		34DBA5791EB268A8005BA553 /* OpenAPIMain.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34DBA57A1EB268A8005BA553 /* Base */,
+			);
+			name = OpenAPIMain.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		348107D51EB11E6F000C55BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		348107D61EB11E6F000C55BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		348107D81EB11E6F000C55BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4J6TRHFL83;
+				INFOPLIST_FILE = WalmartLab/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sangwooim.WalmartLab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		348107D91EB11E6F000C55BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4J6TRHFL83;
+				INFOPLIST_FILE = WalmartLab/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sangwooim.WalmartLab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		348107DB1EB11E6F000C55BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4J6TRHFL83;
+				INFOPLIST_FILE = WalmartLabTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sangwooim.WalmartLabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WalmartLab.app/WalmartLab";
+			};
+			name = Debug;
+		};
+		348107DC1EB11E6F000C55BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4J6TRHFL83;
+				INFOPLIST_FILE = WalmartLabTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sangwooim.WalmartLabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WalmartLab.app/WalmartLab";
+			};
+			name = Release;
+		};
+		348107DE1EB11E6F000C55BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4J6TRHFL83;
+				INFOPLIST_FILE = WalmartLabUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sangwooim.WalmartLabUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WalmartLab;
+			};
+			name = Debug;
+		};
+		348107DF1EB11E6F000C55BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4J6TRHFL83;
+				INFOPLIST_FILE = WalmartLabUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sangwooim.WalmartLabUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WalmartLab;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		348107A81EB11E6F000C55BB /* Build configuration list for PBXProject "WalmartLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				348107D51EB11E6F000C55BB /* Debug */,
+				348107D61EB11E6F000C55BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		348107D71EB11E6F000C55BB /* Build configuration list for PBXNativeTarget "WalmartLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				348107D81EB11E6F000C55BB /* Debug */,
+				348107D91EB11E6F000C55BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		348107DA1EB11E6F000C55BB /* Build configuration list for PBXNativeTarget "WalmartLabTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				348107DB1EB11E6F000C55BB /* Debug */,
+				348107DC1EB11E6F000C55BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		348107DD1EB11E6F000C55BB /* Build configuration list for PBXNativeTarget "WalmartLabUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				348107DE1EB11E6F000C55BB /* Debug */,
+				348107DF1EB11E6F000C55BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 348107A51EB11E6F000C55BB /* Project object */;
+}
